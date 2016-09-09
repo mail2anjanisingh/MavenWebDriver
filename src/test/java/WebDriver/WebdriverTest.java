@@ -1,6 +1,7 @@
 package WebDriver;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
@@ -8,8 +9,9 @@ public class WebdriverTest {
 	@Test
 	public void OpenBrowser()
 	{
-		WebDriver driver = new FirefoxDriver();
-		driver.get("http://google.com");
+		System.setProperty("webdriver.chrome.driver","C:\\Selenium\\Software\\chromedriver_win32\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.google.com/");
 	}
 
 }
