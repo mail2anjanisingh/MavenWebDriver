@@ -13,5 +13,10 @@ public class WebdriverTest {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.google.com/");
 	}
-
-}
+	@Test(enabled = false)
+	public void OpenBrowser1()
+	{
+		System.out.print("OpenBrowser1");
+	}
+	
+	}
